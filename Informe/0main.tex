@@ -1,0 +1,52 @@
+\documentclass[11pt,a4paper,spanish]{article}
+\usepackage[a4paper,left=18mm,right=18mm,bottom=21mm,top=20mm]{geometry}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{fancyhdr,graphicx,booktabs,csquotes,microtype,balance}
+\usepackage[backend=biber,sorting=none,maxbibnames=2,giveninits=true]{biblatex}
+\addbibresource{bibliografia.bib}
+\renewcommand*{\bibfont}{\footnotesize}
+\setlength{\bibitemsep}{0pt}
+\usepackage[justification=centering,font=footnotesize]{caption}
+\setlength{\abovecaptionskip}{3pt}
+\setlength{\belowcaptionskip}{0pt}
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\crefname{figure}{Fig.}{Figs.}
+\crefname{table}{Tabla}{Tablas}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\studentnames}{San Martín, María Candelaria; Ramos, Florencia; Estevez Fujii, Belén; Poliak, Nicole}
+\newcommand{\course}{Investigathon 2026}
+\newcommand{\tutor}{Track Física Social -- Problema Y-Hat}
+\newcommand{\labgroup}{[Grupo F06]}
+\newcommand{\reportdate}{29 de octubre de 2026}
+\newcommand{\filiation}{Departamento de Física, FCEN, UBA -- Buenos Aires, Argentina}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.3pt}
+\setlength{\headheight}{15pt}
+\setlength{\parskip}{0.18em}
+\setlength{\parindent}{10pt}
+\setlength{\columnsep}{6mm}
+\emergencystretch=1.5em
+\setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\floatsep}{5pt plus 1pt minus 1pt}
+\setlength{\intextsep}{5pt plus 2pt minus 2pt}
+\fancyhf{}
+\fancyhead[L]{\course}
+\fancyhead[R]{\labgroup}
+\fancyfoot[L]{\filiation}
+\fancyfoot[R]{\thepage}
+\pagestyle{fancy}
+\title{\vspace{-1.25cm}Modelo estadístico de Boltzmann para la predicción de adjudicaciones}
+\author{\studentnames \\ \tutor}
+\date{\reportdate}
+\begin{document}
+\twocolumn[
+\maketitle\vspace{-0.65cm}
+\input{resumen}
+\vspace{0.2cm}
+]
+\thispagestyle{fancy}
+\input{secciones}
+\printbibliography[heading=bibintoc,title={Referencias}]
+\end{document}
