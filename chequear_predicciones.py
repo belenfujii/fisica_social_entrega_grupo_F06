@@ -1,4 +1,4 @@
-"""Chequea que predicciones/<vertical>.csv cumpla las reglas de ENTREGA.md: una predicción por
+"""Chequea que predicciones/<vertical>.csv cumpla una predicción por
 licitación del test, hasta 100 empresas, puestos 1..K sin saltos, sólo empresas de
 test/<vertical>/empresas.parquet y sin repetidas.
 
