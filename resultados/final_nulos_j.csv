@@ -1,0 +1,5 @@
+modelo nulo,MRR,real − nulo (IC95)
+término 'texto (TF-IDF y temas NMF)' barajado entre candidatas,0.16684066653300145,"+0.0887 (+0.0716, +0.1055)"
+término 'nombre (sorpresa de Shannon)' barajado entre candidatas,0.24600336394291122,"+0.0096 (+0.0030, +0.0166)"
+término 'red (exceso sobre el nulo de Fermi-Dirac)' barajado entre candidatas,0.2579700275227656,"-0.0024 (-0.0100, +0.0047)"
+ganadores de entrenamiento barajados,0.09023827431257284,"+0.1653 (+0.1435, +0.1862)"
