@@ -2,7 +2,7 @@
 # boltzmann_seleccion.py
 #
 # Qué hace este script, en una frase:
-#   arma un modelo de Boltzmann (máxima entropía) sobre el pool y las pistas de modelo_v2.py,
+#   arma un modelo de Boltzmann sobre el pool y las pistas de modelo_v2.py,
 #   le agrega pistas nuevas (BM25, temas NMF, análisis de correspondencias) y
 #   decide, por ABLACIÓN, qué familias de pistas quedan y cuáles se sacan.
 #
@@ -273,8 +273,8 @@ def agregar_pistas(D, d, k_temas=20, k_ca=10, max_docs_nmf=40000):
 #        E = -(β_1 f_1 + β_2 f_2 + ...)          (f = pistas estandarizadas)
 #    y la probabilidad de ganar es la de Boltzmann:
 #        P(empresa | licitación) = exp(-E) / Z,   Z = suma sobre las candidatas del pool.
-#    Los β se eligen por máxima verosimilitud (lo más probable que hayan ganado los que
-#    ganaron). En el óptimo, el promedio de cada pista bajo el modelo es igual al promedio
+#    Los β se eligen por máxima verosimilitud. 
+#    En el óptimo, el promedio de cada pista bajo el modelo es igual al promedio
 #    en los ganadores: es el principio de máxima entropía de Jaynes (1957).
 #    l2 es un "resorte" chico que empuja los β hacia 0 (evita β enormes con pistas raras).
 # =====================================================================================
