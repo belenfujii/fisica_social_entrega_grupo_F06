@@ -1,0 +1,19 @@
+[project]
+name = "ranking-licitaciones"
+version = "1.0.0"
+description = "Modelo de Boltzmann con tronco común (lasso) para rankear empresas candidatas a ganar una licitación."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pyarrow>=14",
+    "scipy>=1.10",
+    "scikit-learn>=1.3",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = ["matplotlib>=3.8", "lightgbm>=4.0"]
