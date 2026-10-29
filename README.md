@@ -1,6 +1,6 @@
 # Y-Hat: ¿quién gana la licitación? Un modelo de Boltzmann global
 
-Investigathon 2026 · Track Física Social · [Nombre del grupo]
+Investigathon 2026 · Track Física Social · Grupo F06
 
 Para cada licitación, el modelo ordena a las empresas candidatas según su probabilidad de
 ganarla, usando solo información anterior a la publicación. La elección del ganador se modela
